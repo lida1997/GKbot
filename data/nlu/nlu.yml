@@ -1,0 +1,32 @@
+version: "2.0"
+
+nlu:
+- intent: ask_product_items
+  examples: |
+    - 我想问[ASA](product)的解读项。
+    - [ASA](product)的解读项。
+    - [asa]{"entity": "product", "value": "ASA"}的解读项。
+    - [全基因](product)的解读项。
+    - [基因组](product)的解读项。
+    - [Asian Screening Array](product)的解读项。
+    - 那它的解读项是什么。
+    - [健康体检](product)的解读项？
+    - [肿瘤套餐](product)的解读项？
+    - [WES]{"entity": "product", "value": "成人wes"}的解读项？
+    - [成人wes](product)的解读项？
+    - [全外](product)的解读项？
+    - [外显子](product)的解读项？
+    - [全外显子](product)的解读项？
+    - [gsa]("entity": "product", "value": "gsa")的解读项？
+    - [GSA](product)的解读项？
+    - [WES+](product)的解读项？
+
+- lookup: product
+  examples: |
+    - ASA
+    - 全基因
+    - WGS
+    - GSA
+    - 健康体检
+    - 肿瘤套餐
+    - WES+

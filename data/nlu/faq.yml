@@ -1,0 +1,7 @@
+version: "2.0"
+nlu:
+- intent: faq/whatIs_ASA
+  examples: |
+    - 什么是 [ASA](product) ?
+    - [ASA](product)干什么的?
+    - 你能解释一下[ASA](product)给我吗？
